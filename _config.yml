@@ -1,10 +1,13 @@
 nav:
   Home: /
   About: /about/
-  Writing: /archives/
-  Projects: http://github.com/probberechts
+  Articles: /archives/
+  Contact: /contact/
+  Subscribe: http://eepurl.com/bosogD
 
 projects_url: http://github.com/probberechts
+
+articles: /archives/
 
 customize:
     gravatar:
@@ -13,7 +16,8 @@ customize:
         enabled: true
         width: 50
         height: 50
-        url: /images/logo.png
+        #url: /images/logo.png
+        url: /images/favicon-192x192.png
         gravatar: false
     favicon: 
       # eg. generate with http://realfavicongenerator.net/
@@ -27,10 +31,10 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/probberechts/cactus-dark
-        twitter: /
-        facebook: /
-        linkedin: /
+        github: http://github.com/kelimuttu/
+        twitter: https://twitter.com/kelimuttu
+        facebook: https://www.facebook.com/rizki.d.kelimutu
+        linkedin: https://www.linkedin.com/in/kelimutu
     post_count: 5
     highlight: rainbow
 

@@ -1,30 +1,13 @@
-<section id="about">
-  <% if (config.description) { %>
-    <%- markdown(config.description) %>
-  <% } %>
-  <p style="display: inline">
-    <% if (theme.customize.social_links) { %>
-      Find me on
-      <ul id="sociallinks">
-        <% for(var i in theme.customize.social_links) { %>
-          <li><a class="icon" target="_blank" href="<%- url_for(theme.customize.social_links[i]) %>" title="<%= i %>"><i class="fa fa-<%= i %>"></i></a></li>
-        <% } %>
-      </ul>.
-    <% } %>
-  </p>
-</section>
 
-<section id="writing">
-  <span class="h1"><a href="<%- url_for("archives") %>">Writing</a></span>
-  <ul class="post-list">
-    <% site.posts.sort('date', 'desc').limit(theme.customize.post_count || 5).each(function(post, i){ %>
-      <li class="post-item">
-        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
-        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
-      </li>
-    <% }); %>
-  </ul>
-</section>
+<section id="greeting">
+  <h1>
+    <% if (config.description) { %>
+      <%- markdown(config.description) %>
+    <% } %>
+  </h1>
+
+  <a href="<%- url_for(theme.articles) %>"><button>Read my articles</button></a>
+<section>
 
 <% if (site.data.projects) { %>
 <section id="projects">
