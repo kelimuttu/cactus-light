@@ -1,10 +1,10 @@
-# Cactus Dark
+# Cactus Light
 
-A responsive, dark and simple [Hexo](http://hexo.io) theme for a personal website.
+A responsive, light and simple [Hexo](http://hexo.io) theme for a personal website.
 
-:cactus: [Demo](https://probberechts.github.io/cactus-dark/)
+:cactus: [Demo](https://kelimuttu.github.io/cactus-light/)
 
-![cactus-dark](https://cloud.githubusercontent.com/assets/2175271/19885143/62e9269c-a01d-11e6-8e26-e36a36201d88.png)
+![cactus-light](https://pageshot.net/images/e8179e0b-cad7-402b-a6a2-6ef1ea7443e5.png)
 
 ## Summary
 
@@ -34,7 +34,7 @@ A responsive, dark and simple [Hexo](http://hexo.io) theme for a personal websit
 1. In the `root` directory:
 
     ```git
-    $ git clone https://github.com/probberechts/cactus-dark.git themes/cactus-dark
+    $ git clone https://github.com/kelimuttu/cactus-light.git themes/cactus-light
     $ npm install hexo-pagination --save
     ```
 
@@ -42,7 +42,7 @@ A responsive, dark and simple [Hexo](http://hexo.io) theme for a personal websit
 
     ```yml
     # theme: landscape
-    theme: cactus-dark
+    theme: cactus-light
     ```
 
 3. Run: `hexo generate` and `hexo server`
@@ -57,43 +57,10 @@ Setup the navigation menu in the theme's `_config.yml`:
   nav:
     Home: /
     About: /about/
-    Writing: /archives/
-    Projects: http://github.com/probberechts
+    Articles: /archives/
+    Contact: /contact/
     LINK_NAME: URL
   ```
-
-### Projects list
-
-Create a projects file `source/_data/projects.json`.
-
-  ```json
-  [
-      {
-         "name":"Hexo",
-         "url":"https://hexo.io/",
-         "desc":"A fast, simple & powerful blog framework"
-      },
-      {
-         "name":"Font Awesome",
-         "url":"http://fontawesome.io/",
-         "desc":"The iconic font and CSS toolkit"
-      }
-  ]
-  ```
-
-### Social media links
-
-Cactus Dark can automatically add links to your social media accounts. Therefore, update the theme's `_config.yml`:
-
-  ```
-  customize:
-    social_links:
-      github: your-github-url
-      twitter: your-twitter-url
-      NAME: your-NAME-url
-  ```
-
-where `NAME` is the name of a [Font Awesome icon](http://fontawesome.io/icons/#brand).
 
 ### RSS
 
